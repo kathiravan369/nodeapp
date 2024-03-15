@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}))
 app.use (express.json())
 app.use(cors())
 
-mongoose.connect('mongodb://127.0.0.1:27017/nodeapp?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2',{
+mongoose.connect('mongodb://127.0.0.1:27017/notes-data?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.0.2',{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 })
